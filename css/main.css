@@ -1,0 +1,37 @@
+.container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.1fr 2.5fr;
+    grid-auto-columns: 1fr;
+    gap: 8px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "button"
+      "covers";
+  }
+  
+  .header { grid-area: header; }
+  
+  .button { grid-area: button; }
+  
+  .covers {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "c1 c2 c3"
+    "c4 c5 c6"
+    "c7 c8 c9"; 
+    grid-area: covers;
+  }
+  
+  .c1 { grid-area: c1; }
+.c2 { grid-area: c2; }
+.c3 { grid-area: c3; }
+.c4 { grid-area: c4; }
+.c5 { grid-area: c5; }
+.c6 { grid-area: c6; }
+.c7 { grid-area: c7; }
+.c8 { grid-area: c8; }
+.c9 { grid-area: c9; }
